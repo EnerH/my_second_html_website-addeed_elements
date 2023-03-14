@@ -1,0 +1,73 @@
+/* Pallette of colors I want to follow https://colorhunt.co/palette/fa957965406265d6ceffe9d6 */
+
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1 {
+    margin-top: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top-container {
+    background-color: #FA9579;
+    position: relative;
+    padding-top: 250px;
+}
+
+.cloud-image_top{
+    position: absolute;
+    right: 300px; /*margin 300 px from the right*/
+    top: 30px; /*margin 39 ox frin the top*/
+}
+
+.cloud-image_bottom{
+    position: absolute;
+    left: 300px; /*margin 300 px from the left*/
+    bottom: 350px; /*margin 350 px from the bottom*/
+}
+
+
+.profile-pic {
+    width: 25%; /* set the desired width */
+    height: 25%; /* set the desired height */
+    border-radius: 50%; /* apply a circular border radius */
+  }
+
+.skill-icon{
+    width: 25%;
+    height: 25%;
+} 
+
+.coffee-machine{
+    width: 15%;
+    height: 15%;
+}
+  
+
+.middle {
+
+}
+
+.bottom {
+
+}
+
+
+
+
+
+/*Padding is the distance between the text box and the border. It affects the size of our element*/
+/*Border is surrounds the element. It affects the size of the element */
+/* Margin is the distance between the whole objects, and all elements that appear on screen. It doesn't affect the size of the element */
+/*Common Block Elements: <p>, <h1>, <div>, [<ol>,<ul>,<lil>], <form>. These forms have a width for the whole page, taking all the space in that width for themselves. So there can't be elements on ther left or right */

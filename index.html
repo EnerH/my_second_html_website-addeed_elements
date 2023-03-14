@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>My second website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-container">
+        <img src="images/cloud.png" class="cloud-image_top">
+        <h1>I'm Ener</h1>
+        <p>about to be a web developer aka <u>programmer</u></p>
+        <img src="images/cloud.png" class="cloud-image_bottom">
+        <img src="images/mountain.png" class="mountain-image">
+    </div>
+
+    <div class="middle-container">
+      <div class="profile">
+        <img src="images/me.png" alt="profile_picture" class="profile-pic">
+        <h2>Hello.</h2>
+        <p>Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+      </div>
+
+      <hr>
+
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img  src="images/analysis.png" alt="skill_icon" class="skill-icon">
+          <h3>Lorem & Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+        </div>
+
+        <div class="skill-row">
+          <img src="images/coffee-machine.png" alt="coffee_machine" class="coffee-machine">
+          <h3>Lorem Ipsum Dolor</h3>
+          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Lorem ipsum dolor sit amet, non elit.</h3>
+        <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
+        <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+      </div>
+    </div>
+    
+    
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+      <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+      <p>© Name Surname.</p>
+    </div>
+    
+</body>
+</html>
+
+<!--
+    Display property
+
+    Common block elements, such as <div></div> and <p></p> <img> <a>, are used to create blocks of content that take up the full width of their parent container and create a new line after them. The hight is determined by the contenct of the element, eg font size.  
+    
+    Common inline elements, such as <span></span>, are used to create small, inline portions of content that do not create a new line. 
+    
+    Inline-block elements are a hybrid of the two, they will take up only as much width as their content requires and will not create a new line but they will be block level elements and can be set width and height.
+
+    None is to remove a element from the page.
+
+    Hidden is to hide a element from the page.
+
+    Too add it in css:
+    
+    .middle{
+        display: inline-block/hidden/none;
+    }
+
+    Position property
+
+    To add it in css:
+
+    .blue{
+        position: relative;
+        bottom: 100px; (it's pushed from to bottom to tope)
+        left: 100px; (it's pushed from the left to the right)
+    }
+
+    Position: Relative vs Absolute
+
+    Relative: It changes the position relatively to where it is. Example
+   
+    Html:
+    <body>
+    <div class="red"> </div>
+    <div class="blue"> </div>
+    <div class="yellow"></div>
+    </body>
+
+    CSS:
+
+    .red{
+  height: 100px;
+  width: 100px;
+  background-color: red;}
+
+.blue{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position:relative;}
+
+.yellow{
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  position:relative;}
+
+    
+
+Absolute: It changes the position relatively to the parent element. It affects the flow of the html and behaves as relative within the parent element and affecting the flow.
+
+Same html but w diff CSS
+
+.red{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+
+.blue{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position:absolute;
+  top:100px;
+  left: 100px;
+}
+
+.yellow{
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  position:absolute;
+  top:200px;
+  left:200px;
+}
+ 
+or
+
+body{
+  margin:0px;
+}
+
+.container{
+  height: 300px;
+  width: 300px;
+  position:relative;
+  background-color: black;
+}
+
+.red{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position:absolute;
+  right:0px;
+
+}
+
+.blue{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position:absolute;
+  top: 0px;
+  left:100px;
+}
+
+.yellow{
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  position:absolute;
+  top: 0px;
+}
+ 
+Idem
+
+body{
+  margin:0px;
+}
+
+.container{
+  height: 300px;
+  width: 300px;
+  position:relative;
+  background-color: black;
+}
+
+.red{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position:absolute;
+  left:200px;
+}
+
+.blue{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position:absolute;
+  left:100px;
+}
+
+.yellow{
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  position:absolute;
+  right:200px;
+}
+
+-->
+
